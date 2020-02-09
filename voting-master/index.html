@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Голосование</title>
+	<link rel="stylesheet" href="./node_modules/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/hw.css">
+</head>
+<body>
+	<div  id="allbut" style="margin-top: 10vw;">
+	<h3 class="mt-5 d-flex justify-content-center">Кто вам больше нравится?</h3>
+	<div class="mt-5 d-flex justify-content-center">
+		<img src="./img/cat.svg" alt="cat" style="max-height:5vh; max-width:5vh; margin-top: 0.5vw; margin-right: 1vw;">
+		<form id="form" method="post" action="javascript:void(0);" onsubmit="ajax_cat()">
+			<input class="btn btn-primary" type="submit" value="Кошки" id='but1' style="background-color: #543c52">
+		</form>
+		<img src="./img/dog.svg" alt="dog" style="max-height:5vh; max-width:5vh; margin-top: 0.5vw; margin-right: 1vw;">
+		<form id="form" method="post" action="javascript:void(0);" onsubmit="ajax_dog()">
+			<input class="btn btn-primary" type="submit" value="Собаки" id='but2' style="background-color: #543c52">
+		</form>
+		<img src="./img/parrot.svg" alt="parrot" style="max-height:5vh; max-width:5vh; margin-top: 0.5vw; margin-right: 1vw;">
+		<form id="form" method="post" action="javascript:void(0);" onsubmit="ajax_par()">
+			<input class="btn btn-primary" type="submit" value="Попугаи" id='but3' style="background-color: #543c52">
+		</form>	
+	</div>
+	</div>
+
+    <div class="container" style="display: none;" id ='section_bar'>
+		<section class="justify-content-center">
+			<p>Кошки:</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-info" role="progressbar" id ="pr_cat" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10000">
+				</div>
+            </div>
+		</section>
+            
+		<section class="justify-content-center">
+			<p>Собаки:</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-info" role="progressbar" id ="pr_dog" style="width:0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10000">
+				</div>
+			</div>  
+		</section>
+            
+		<section class="justify-content-center">
+			<p>Попугаи:</p>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped bg-info" role="progressbar" id ="pr_par" style="width:0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="10000">
+				</div>
+			</div>
+		</section>
+		<div class="mt-5 d-flex justify-content-center" id="div1"></div>
+	</div>
+
+  
+
+
+    <script src="./src/some_file_with.js"></script>
+    <script src="./src/jquery-3.4.1.min.js"></script>
+</body>
+</html>
+
+</body>
+</html>

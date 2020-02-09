@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Jura-VariableFont';
+	src:url('../fonts/Jura-VariableFont:wght.ttf');
+}
+
+
+body{
+	background-color: #edd2cb;
+	font-family: 'Jura-VariableFont';
+}
+
+input {
+	margin-right: 1vw;
+	box-shadow: 0 5px 13px 5px #a6938e, 0 -5px 13px 5px #a6938e;
+}
+
+.container {
+	margin-top: 7vw;
+	width: 50vw;
+}
